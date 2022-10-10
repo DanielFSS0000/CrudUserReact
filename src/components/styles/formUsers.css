@@ -1,0 +1,64 @@
+.form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0007;
+    position: relative; /* Posiciona al absolute como hijo*/
+    width: 100%;
+    max-width: 350px;
+}
+
+.form__x{
+    position: absolute;/* Posiciona al relative como el padre*/
+    top:20px;
+    right: 20px;
+    font-size: 20px;
+    color: #D85D5D;
+    cursor: pointer;
+    transition: transform 100ms ease;
+}
+.form__x:hover{
+    transform: scale(1.1);
+    transition: transform 100ms ease;
+}
+.form__title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.form__div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+.form__label{
+    font-size: 14px;
+    font-weight: 400;
+    color:#000a;
+}
+.form__input{
+    font-family: inherit; /*se agrega por que no hereda font-family*/
+    padding: 5px 15px;
+    background-color: #F9FAFC;
+    border: 1px solid #ccc9;
+    border-radius: 4px;
+    font-weight: 100;
+}
+/* Cambiar estilo a placeholder
+.form__input::placeholder{
+    color: #89a0ce;
+} */
+.form__btn{
+    width: 100%;
+    padding:10px;
+    border-radius: 4px;
+    background-color: #555A88;
+    color:white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.form__btn:hover{
+    filter: brightness(1.2);
+    transition: filter 100ms ease;
+}

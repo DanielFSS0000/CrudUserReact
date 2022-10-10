@@ -1,0 +1,61 @@
+.App{
+    padding-bottom: 60px;
+}
+.users-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Aplicacion del Modal al formulario */
+.form-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0002;
+    /* Difumina los elementos de fondo */
+    backdrop-filter: blur(2px);
+    /* Saca al elemento de flujo para ponerlo delante de los formularios */
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Elimina del flujo un elemento de la vista, ahora se quitar el formulario */
+.disable__form{
+    display: none;
+}
+.App__container-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.App__title{
+    color: White;
+    background-color: #555A88;
+    padding: 5px;
+    border-radius: 5px;
+}
+.App__btn{
+    width: 100%;
+    max-width: 200px;
+    padding:10px;
+    letter-spacing:2px;
+    background-color: green;
+    color:white;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 100ms ease, box-shadow 100ms ease;
+}
+.App__btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #0006;
+    transition: transform 100ms ease, box-shadow 100ms ease;
+}
